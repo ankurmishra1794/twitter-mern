@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "https://twitter-mern-056s.onrender.com",
+    origin: "*",
     credentials: true
 }));
 
