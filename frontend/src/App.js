@@ -10,9 +10,10 @@ function App() {
     <>
         <BrowserRouter>           
           <Routes>
-            <Route path='/home' element={<Feed/>}/>
-            <Route path='/profile/:id' element={<Profile/>}/>           
-            <Route path='/login' element={<Login/>}/> 
+            <Route exact path='/home' element={<Feed/>}/>
+            <Route exact path='/profile/:id' element={<Profile/>}/>           
+            <Route exact path='/login' element={<Login/>}/>
+            <Route exact path='/' element={<Login/>}/> 
           </Routes>                
        </BrowserRouter> 
        <Toaster/>              
